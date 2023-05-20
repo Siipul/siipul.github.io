@@ -5,9 +5,11 @@
 -->
 <html>
 	<head>
-		<title>Home First</title>
-		<meta charset="utf-8" />
+		<title>My first Website</title>
+		<meta http-equiv="X-UA-Compatible" content="text/html; charset=UTF-8"/>
+		<meta content='width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover' name='viewport'/>
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="icon" href="images/pic07.jpg" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
@@ -22,7 +24,19 @@
 							<header>
 								<h1><a href="index.html" id="logo">Welcome</a></h1>
 								<hr />
-								<p>A Simple Website</p>
+								<p id="text">A Simple Website</p>
+								<script>
+									const textElement = document.getElementById('text'); // Ganti 'text' dengan ID elemen HTML yang diinginkan
+										setInterval(() => {
+										const currentText = textElement.innerText;
+										if (currentText === 'A Simple Website') {
+											textElement.innerText = 'A original Website';
+										} else {
+											textElement.innerText = 'A Simple Website';
+										}
+										}, 5000); // Mengubah setiap 2 detik (2000 milidetik)
+
+								</script>
 							</header>
 							<footer>
 								<a href="#banner" class="button circled scrolly">Start</a>

@@ -25,19 +25,7 @@
 								<h1><a href="index.html" id="logo">Welcome</a></h1>
 								<hr />
 								<p id="text">A Simple Website</p>
-								<script>
-									const textElement = document.getElementById('text'); // Ganti 'text' dengan ID elemen HTML yang diinginkan
-										setInterval(() => {
-										const currentText = textElement.innerText;
-										if (currentText === 'A Simple Website') {
-											textElement.innerText = 'A original Website';
-										} else {
-											textElement.innerText = 'A Simple Website';
-										}
-										}, 5000); // Mengubah setiap 2 detik (2000 milidetik)
-
-								</script>
-							</header>
+								</header>
 							<footer>
 								<a href="#banner" class="button circled scrolly">Start</a>
 							</footer>
@@ -51,19 +39,19 @@
 								<li>
 									<a href="#">Dropdown</a>
 									<ul>
-										<li><a href="#">Lorem ipsum dolor</a></li>
-										<li><a href="#">Magna phasellus</a></li>
-										<li><a href="#">Etiam dolore nisl</a></li>
+										<li><a href="#">Coloms 1</a></li>
+										<li><a href="#">Coloms 2</a></li>
+										<li><a href="#">Coloms 3</a></li>
 										<li>
 											<a href="#">And a submenu &hellip;</a>
 											<ul>
-												<li><a href="#">Lorem ipsum dolor</a></li>
-												<li><a href="#">Phasellus consequat</a></li>
-												<li><a href="#">Magna phasellus</a></li>
-												<li><a href="#">Etiam dolore nisl</a></li>
+												<li><a href="#">Mini coloms 1</a></li>
+												<li><a href="#">Mini coloms 2</a></li>
+												<li><a href="#">Mini coloms 3</a></li>
+												<li><a href="#">Mini coloms 4</a></li>
 											</ul>
 										</li>
-										<li><a href="#">Veroeros feugiat</a></li>
+										<li><a href="#">Coloms 4</a></li>
 									</ul>
 								</li>
 								<li><a href="left-sidebar.html">Left Sidebar</a></li>
@@ -395,6 +383,17 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script>
+				const textElement = document.getElementById('text'); // Ganti 'text' dengan ID elemen HTML yang diinginkan
+						setInterval(() => {
+						const currentText = textElement.innerText;
+						if (currentText === 'A Simple Website') {
+							textElement.innerText = 'A original Website';
+						} else {
+							textElement.innerText = 'A Simple Website';
+						}
+						}, 5000); // Mengubah setiap 2 detik (2000 milidetik) 
+			</script>
 
 	</body>
 </html>
